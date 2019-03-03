@@ -2,58 +2,146 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Website - bootstrap</title>
-    <link rel="stylesheet" href="src/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <script src="src/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Website - bootstrap</title>
+  <link rel="stylesheet" href="src/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <script src="src/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <header class="">
-        <div class="container pt-4 pb-4">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-2">
-                    <img class="img-fluid img-thumbnail" src="src/img/header.jpg" alt="Uma imagem qualquer">
-                </div>
-                <div class="col-md-10">
-                    <h1>Nome do Site</h1>
-                </div>
-            </div>
-            <hr>
-            <nav class="nav navbar-expand-sm bg-light">
-                <ul class="navbar-nav mr-auto">
-                    <a href="#" class="navbar-brand">Home</a>
-                    <li><a href="#" class="nav-link ">Profile</a></li>
-                    <li><a href="#" class="nav-link ">Messages</a></li>
-                    <li class="dropdown">
-                        <a hrenavbarf="#" class="nav-link dropdown-toggle " data-toggle="dropdown">
-                            Account Settings
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item"></a> Item 1</li>
-                            <li><a href="#" class="dropdown-item"></a> Item 2</li>
-                            <li><a href="#" class="dropdown-item"></a> Item 3</li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+  <header class="">
+    <div class="container pt-4 pb-4">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-2">
+          <img class="img-fluid img-thumbnail" src="src/img/header.jpg" alt="Uma imagem qualquer">
         </div>
-    </header>
-    <main class="container">
-        <section>
-
-        </section>
-
-        <section>
-
-        </section>
-    </main>
-
-    <footer>
-
-    </footer>
+        <div class="col-md-10">
+          <h1>Nome do Site</h1>
+        </div>
+      </div>
+      <hr style="border: 1px solid black;">
+      <nav class="nav navbar-expand-sm bg-light">
+        <ul class="navbar-nav mr-auto">
+          <a href="#" class="navbar-brand">Home</a>
+          <li><a href="#" class="nav-link ">Profile</a></li>
+          <li><a href="#" class="nav-link ">Messages</a></li>
+          <li class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Account Settings
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item"></a> Item 1</li>
+              <li><a href="#" class="dropdown-item"></a> Item 2</li>
+              <li><a href="#" class="dropdown-item"></a> Item 3</li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Descubra
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Paisagem</a></li>
+              <li><a href="#" class="dropdown-item">Tecnologia</a></li>
+              <li><a href="#" class="dropdown-item">Abstrato</a></li>
+              <li class="dropdown-divider"></li>
+              <li><a href="#" class="dropdown-item">Animais</a></li>
+              <li><a href="#" class="dropdown-item">Comida</a></li>
+              <li><a href="#" class="dropdown-item">Pessoas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <div class="row">
+        <a href="#" class="col-sm-12 col-md-12 col-lg-12">
+          <figure>
+            <img src="src/img/1.jpg" alt="Alguma imagem" class="img-fluid img-thumbnail">
+          </figure>
+        </a>
+      </div>
+      <div class="row">
+        <a href="#" class="col-sm-6 col-md-6 col-lg-6">
+          <figure>
+            <img src="src/img/1.jpg" alt="Alguma imagem"class="img-fluid img-thumbnail">
+          </figure>
+        </a>
+        <a href="#" class="col-sm-3 col-md-3 col-lg-3">
+          <figure>
+            <img src="src/img/1.jpg" alt="Alguma imagem" class="img-fluid img-thumbnail">
+          </figure>
+        </a>
+        <a href="#" class="col-sm-3 col-md-3 col-lg-3">
+          <figure>
+            <img src="src/img/1.jpg" alt="Alguma imagem" class="img-fluid img-thumbnail">
+          </figure>
+        </a>
+      </div>
+      <hr style="border: 1px solid black;">
+    </section >
+    <section class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Contato</h2>
+          <form class="" action="" method="post">
+            <input type="text" class="form-control" placeholder="Nome">
+            <br>
+            <input type="email" class="form-control" placeholder="Email">
+            <br>
+            <input type="text" class="form-control" placeholder="Assunto">
+            <br>
+            <p>Observações:</p>
+            <textarea style="border: 2px solid black;" class="form-control" name="observacao" rows="8" cols="80">
+            </textarea>
+            <br>
+            <button  type="button" name="enviar" class="btn btn-primary">
+              Enviar
+            </button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h2>Localização</h2>
+          <a target="_blank" href="https://www.google.com.br/maps/place/Centro+Universit%C3%A1rio+para+o+Desenvolvimento+do+Alto+Vale+do+Itaja%C3%AD/@-27.2104016,-49.6466032,17z/data=!3m1!4b1!4m5!3m4!1s0x94dfb9ae021204f5:0xada6f95bdcb46273!8m2!3d-27.2104016!4d-49.6444145">
+            <figure>
+              <img src="src/img/2.png" alt="mapa" class="img-fluid img-thumbnail">
+            </figure>
+          </a>
+        </div>
+      </div>
+      <hr style="border: 1px solid black;">
+    </section>
+    <section class="reviews container">
+      <h2>Realização</h2>
+      <div class="row">
+        <div class=" col-md-2">
+          <img src="https://dummyimage.com/160x100/949494/000000.jpg&text=Realização"  alt="imagem" >
+        </div>
+        <div class=" col-md-2">
+          <img src="https://dummyimage.com/160x100/949494/000000.jpg&text=Realização"  alt="imagem" >
+        </div>
+        <div class=" col-md-2">
+          <img src="https://dummyimage.com/160x100/949494/000000.jpg&text=Realização"  alt="imagem" >
+        </div>
+        <div class=" col-md-2">
+          <img src="https://dummyimage.com/160x100/949494/000000.jpg&text=Realização"  alt="imagem" >
+        </div>
+        <div class=" col-md-2">
+          <img src="https://dummyimage.com/160x100/949494/000000.jpg&text=Realização"  alt="imagem">
+        </div>
+        <div class=" col-md-2">
+          <img src="https://dummyimage.com/160x100/949494/000000.jpg&text=Realização"  alt="imagem" >
+        </div>
+      </div>
+      <br>
+    </section>
+  </main>
+  <footer class="card-footer border-dark">
+    <p class="text-center">@2019</p>
+  </footer>
 </body>
 
 </html>
